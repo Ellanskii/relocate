@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 import countriesRaw from './countries.json'
 
 const countries = countriesRaw
-// .filter(c => c.code.length)
+.filter(c => c.code.length)
 .sort((a, b) => a.text.localeCompare(b.text))
 .map(country => ({
   text: `${country.icon} ${country.text}`,
