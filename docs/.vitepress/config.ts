@@ -10,7 +10,7 @@ const countries = countriesRaw
 }))
 
 export default defineConfig({
-  base: '/relocate/',
+  // base: '/relocate/',
   title: 'Relocate.me',
   description: 'Escape from Mordor',
   themeConfig: {
