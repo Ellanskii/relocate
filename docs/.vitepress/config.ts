@@ -1,5 +1,13 @@
 import { defineConfig } from 'vitepress'
-import countries from './countries.json'
+import countriesRaw from './countries.json'
+
+const countries = countriesRaw
+// .filter(c => c.code.length)
+.sort((a, b) => a.text.localeCompare(b.text))
+.map(country => ({
+  text: `${country.icon} ${country.text}`,
+  link: '/countries/' + country.code
+}))
 
 export default defineConfig({
   title: 'Relocate.me',
@@ -9,10 +17,7 @@ export default defineConfig({
       {
         text: 'Страны',
         collapsible: true,
-        items: countries.map(country => ({
-          text: `${country.icon} ${country.text}`,
-          link: '/countries/' + country.code
-        }))
+        items: countries
       }
     ],
     outlineTitle: 'Содержание',
