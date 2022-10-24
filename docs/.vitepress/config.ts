@@ -23,7 +23,7 @@ export default defineConfig({
     outlineTitle: 'Содержание',
     editLink: {
       pattern: 'https://github.com/ellanskii/relocate/edit/master/docs/:path',
-      text: 'Нашли неточность или хотите дополнить? Отредактировать страницу'
+      text: 'Нашли неточность или хотите дополнить? Отредактируйте страницу на Github'
     }
   }
 })
