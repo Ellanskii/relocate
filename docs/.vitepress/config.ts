@@ -11,9 +11,17 @@ const countries = countriesRaw
 
 export default defineConfig({
   // base: '/relocate/',
-  title: 'Relocate.me',
-  description: 'Escape from Mordor',
+  lang: 'ru-RU',
+  title: 'Эмиграция из России',
+  description: '',
+  // lastUpdated: true,
   themeConfig: {
+    nav: [
+      {
+        text: 'Поддержать проект',
+        link: '/support'
+      }
+    ],
     sidebar: [
       {
         text: 'Страны',
@@ -25,6 +33,11 @@ export default defineConfig({
     editLink: {
       pattern: 'https://github.com/ellanskii/relocate/edit/master/docs/:path',
       text: 'Нашли неточность или хотите дополнить? Отредактируйте страницу на Github'
+    },
+    lastUpdatedText: 'Обновлено',
+    docFooter: {
+      prev: 'Предыдущая страница',
+      next: 'Следующая страница'
     }
   }
 })

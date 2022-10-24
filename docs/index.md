@@ -13,8 +13,8 @@ hero:
       text: Выбрать страну
       link: /countries/
     - theme: alt
-      text: Помочь проекту
-      link: /donate
+      text: Рассказать историю
+      link: /feedback
 
 features:
   - title: Гайды по эмиграции
